@@ -278,9 +278,9 @@ input[type="checkbox"]:active ~ .search-form__pseudo-checkbox{
   height:103px;
 }
 
-.content__video-card-description-container{
-  /*width:100%;*//*нужно ли оно?*/
-}
+/*.content__video-card-description-container{
+  width:100%;
+}/*нужно ли оно?*/
 
 .more-button{
   width: 100%;
