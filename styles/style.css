@@ -47,6 +47,7 @@ ol {
 }
 
 .result__video-container{
+  position:relative;
   width: 711px;
   height:386px;
   margin-bottom: 16px;
@@ -60,6 +61,30 @@ ol {
 .search-form{
   display: flex;
   justify-content: space-between;
+  
+}
+
+.search-form__fieldset-title{
+  color: #FFF;
+  font-family: Fira Sans Condensed, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+}
+
+.title{
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+}
+
+.content__accent{
+  color: #545050;
 }
 
 .content__details{
@@ -71,12 +96,28 @@ ol {
 }
 
 .content__list{
+  position: relative;
   height: 298px;
   overflow: auto;
 }
 
 .content__list-item:not(:nth-last-child(2)){
   margin-bottom: 30px;
+}
+
+.content__card-link{
+  text-decoration: none;
+  color: #FFF;
+}
+
+.content__video-card-title{
+  font-family: Oswald;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%; /* 30px */
+  text-transform: uppercase;
+  margin-bottom: 6px;
 }
 
 .content__video-card{
