@@ -60,10 +60,9 @@ button:hover{
   text-decoration: underline;
 }
 
-button:focus-visible{
-  border:3px #fff;
-  border-style: double;
-}/*Подумать над этим!!!!*/
+.search-form__submit-button:focus-visible{
+  border:3px double #fff;
+}
 
 .content {
   display: flex;
@@ -113,10 +112,6 @@ button:focus-visible{
   cursor: text;
 }
 
-.search-form__label{
-  font-size: 0;/*убирем отступы span*/
-}
-
 .search-form__textfield:focus, .search-form__label:focus{
   border: 0;
 }
@@ -147,7 +142,6 @@ button:focus-visible{
 
 .search-form__checkbox-list{
   width: fit-content;
-  padding-bottom: 1px;
 }
 
 .search-form__label:not(:last-child){
@@ -155,19 +149,26 @@ button:focus-visible{
 }
 
 .search-form__pseudo-checkbox{
+  content: '';
   display: inline-block;
   width: 19px;
   height: 19px;
-  margin-right: 5px;
   border: 1px solid #fff;
-  vertical-align: bottom;
+  vertical-align: middle;
+  text-align: center;
 }
 
-input[type="checkbox"]:active ~ .search-form__pseudo-checkbox{
+.search-form__pseudo-checkbox::before{
+  content: '';
+  display: inline-block;
   width: 15px;
-  height: 15px;
-  background-color:#FFF;
-} /*разобраться с этим!!!!!*/
+  height:15px;
+  text-align: center;
+}
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox::before{
+  background-color:#fff;
+}
 
 .search-form__label:hover{
   text-decoration: underline;
@@ -278,9 +279,9 @@ input[type="checkbox"]:active ~ .search-form__pseudo-checkbox{
   height:103px;
 }
 
-/*.content__video-card-description-container{
-  width:100%;
-}/*нужно ли оно?*/
+.content__video-card-description-container{
+  max-width:100%;
+}
 
 .more-button{
   width: 100%;
