@@ -101,6 +101,7 @@ input, button{
 .search-form__textfield{
   width: 225px;
   padding-right: 14px;
+  margin-bottom:1px;
   appearance: none;
   color: #fff;
   font-family: inherit;
@@ -198,6 +199,8 @@ input, button{
 }
 
 .title{
+  position: relative;
+  top:3px;
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
@@ -274,10 +277,12 @@ input, button{
 }
 
 .content__video-card-description-container{
+  padding:2px;
   max-width:100%;
 }
 
 .more-button{
   width: 100%;
   height: 34px;
+  margin-bottom:1px;
 }
