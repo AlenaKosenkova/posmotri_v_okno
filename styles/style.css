@@ -95,7 +95,6 @@ input, button{
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  height:54px;
 }
 
 .search-form__textfield{
@@ -168,9 +167,12 @@ input, button{
   padding:1px 0 0 1px;
 }
 
+.search-form__label:hover{
+  cursor: pointer;
+}
+
 .search-form__label:hover .search-form__label-text{
   text-decoration: underline;
-  cursor: pointer;
 }
 
 .visually-hidden {
@@ -199,8 +201,6 @@ input, button{
 }
 
 .title{
-  position: relative;
-  top:3px;
   font-family: Oswald, sans-serif;
   font-size: 75px;
   font-weight: 700;
